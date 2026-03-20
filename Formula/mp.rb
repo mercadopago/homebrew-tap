@@ -5,21 +5,21 @@
 class Mp < Formula
   desc "The official Mercado Pago CLI for developers and AI agents."
   homepage "https://github.com/mercadopago/mp-cli"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mercadopago/mp-cli/releases/download/v0.1.0/mp_0.1.0_darwin_amd64.tar.gz"
-      sha256 "bab3e70972adae2bc5b52c7f4f49d22a0fbbad10edaf728006ab3112a56b1389"
+      url "https://github.com/mercadopago/homebrew-tap/releases/download/v0.1.1/mp_0.1.1_darwin_amd64.tar.gz"
+      sha256 "2583abd8650f2e226e277c385759590efa5fd2d94d0adce5cc1ea82a4e09952a"
 
       define_method(:install) do
         bin.install "mp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mercadopago/mp-cli/releases/download/v0.1.0/mp_0.1.0_darwin_arm64.tar.gz"
-      sha256 "db76a1bc94d792d0e827ddcae80f772f9fa593a8effe7859e5ee04ee70d6cde9"
+      url "https://github.com/mercadopago/homebrew-tap/releases/download/v0.1.1/mp_0.1.1_darwin_arm64.tar.gz"
+      sha256 "7a9af2effcc391e831dd95206ccc970be639b517952d2da6f45583c8471136d0"
 
       define_method(:install) do
         bin.install "mp"
@@ -29,15 +29,15 @@ class Mp < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mercadopago/mp-cli/releases/download/v0.1.0/mp_0.1.0_linux_amd64.tar.gz"
-      sha256 "60a0265068ccbcc136d821554c888f7847132a87affd31f49dd7a60d297fdca7"
+      url "https://github.com/mercadopago/homebrew-tap/releases/download/v0.1.1/mp_0.1.1_linux_amd64.tar.gz"
+      sha256 "50c7dbcdc194579a3d85d9d125d26a3c9c795988bdbfdb1b8bc467cc71fa081d"
       define_method(:install) do
         bin.install "mp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mercadopago/mp-cli/releases/download/v0.1.0/mp_0.1.0_linux_arm64.tar.gz"
-      sha256 "28dd49659ffd68e360046d815bb8b30af7f57e24b45897183e383d62edd37822"
+      url "https://github.com/mercadopago/homebrew-tap/releases/download/v0.1.1/mp_0.1.1_linux_arm64.tar.gz"
+      sha256 "a2b8208b49856e15fb6b132e495242ade6a73984b3e7d385063c90d73850668c"
       define_method(:install) do
         bin.install "mp"
       end
