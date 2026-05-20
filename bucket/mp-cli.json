@@ -1,0 +1,15 @@
+{
+    "version": "1.0.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.0/mp_1.0.0_windows_amd64.zip",
+            "bin": [
+                "mp.exe"
+            ],
+            "hash": "359ea588acaa4b285b2d11383e745e05cd1a663e4e752f32294479bd012311f0"
+        }
+    },
+    "homepage": "https://github.com/mercadopago/mp-cli",
+    "license": "MIT",
+    "description": "The official Mercado Pago CLI for developers and AI agents."
+}
