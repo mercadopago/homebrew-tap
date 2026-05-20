@@ -5,13 +5,13 @@
 class MpCli < Formula
   desc "The official Mercado Pago CLI for developers and AI agents."
   homepage "https://github.com/mercadopago/mp-cli"
-  version "0.1.9"
+  version "1.0.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mercadopago/homebrew-tap/releases/download/v0.1.9/mp_0.1.9_darwin_amd64.tar.gz"
-      sha256 "c14bd10f4f9831389f86d84488ead57723b1252c6aed7446a2ef8e6b42b8526a"
+      url "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.0/mp_1.0.0_darwin_amd64.tar.gz"
+      sha256 "cdd4000c93b8cad043b177769aa25b1e8b41901bf540ea34fd9ba67a43842649"
 
       define_method(:install) do
         begin
@@ -22,8 +22,8 @@ class MpCli < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mercadopago/homebrew-tap/releases/download/v0.1.9/mp_0.1.9_darwin_arm64.tar.gz"
-      sha256 "ee516ce69669624c1701b8908d72a06346fab2f8c81b67dada6ba00a95cd6c80"
+      url "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.0/mp_1.0.0_darwin_arm64.tar.gz"
+      sha256 "fada1cfc69627587c6217d854e08828e31ca1f65afce68d8ab4edc789011b002"
 
       define_method(:install) do
         begin
@@ -37,8 +37,8 @@ class MpCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mercadopago/homebrew-tap/releases/download/v0.1.9/mp_0.1.9_linux_amd64.tar.gz"
-      sha256 "b7000c415eda0dfb82125748b0310002a7d5dc923ea65124252c21043250bdaf"
+      url "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.0/mp_1.0.0_linux_amd64.tar.gz"
+      sha256 "6936094a11c9f07f2164ad8ea28b09e16cd992048fd03ce1d9aa829117a9e845"
       define_method(:install) do
         begin
           Formula["mp"].unlink if Formula["mp"].linked?
@@ -48,8 +48,8 @@ class MpCli < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mercadopago/homebrew-tap/releases/download/v0.1.9/mp_0.1.9_linux_arm64.tar.gz"
-      sha256 "81c82293ddd26bcff17306e9806f1d02a2a0c3007e0c58cecaa2166ce49791ee"
+      url "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.0/mp_1.0.0_linux_arm64.tar.gz"
+      sha256 "495971edfbf5d0ffe61b245fd138af12c46fd144abcec3e46bb4b2fcef073e76"
       define_method(:install) do
         begin
           Formula["mp"].unlink if Formula["mp"].linked?
