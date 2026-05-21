@@ -2,12 +2,12 @@ Package: mp-cli
 Version: 1.0.0
 Architecture: amd64
 Maintainer: Mercado Pago <developers@mercadopago.com>
-Installed-Size: 30260
+Installed-Size: 30264
 Filename: pool/main/mp-cli_1.0.0_linux_amd64.deb
-Size: 12287332
-MD5sum: 42bcf89c381925bcc0241b0808a57e3c
-SHA1: 0a6820a9796f2562a0700d68b21b4523257bdd02
-SHA256: ecc010c0aaf2b760912140232360e2730d7ee6b6fc6616ef9e60aed413d5e752
+Size: 12289256
+MD5sum: e37c03492cf34378154ef2044e841945
+SHA1: fd2f36d63823c2c67313d1ad59d108febd53457a
+SHA256: 24cc684b7c801e8bd75f127bc8f5eac773cc8c739f85c2717290717f9ff5c863
 Priority: optional
 Homepage: https://github.com/mercadopago/mp-cli
 Description: The official Mercado Pago CLI for developers and AI agents.
