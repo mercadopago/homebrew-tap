@@ -4,9 +4,9 @@
         "64bit": {
             "url": "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.0/mp_1.0.0_windows_amd64.zip",
             "bin": [
-                "mp.exe"
+                "mpcli.exe"
             ],
-            "hash": "453013137947ac0a7a47a2abe42d1dccaa5d4ce391918184b0bd876f9d47bcf5"
+            "hash": "fc2c25532ec08942b063c49b5100f167708869b0dd0db16ac2c1e4db18dc2b6f"
         }
     },
     "homepage": "https://github.com/mercadopago/mp-cli",
