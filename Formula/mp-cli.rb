@@ -5,62 +5,62 @@
 class MpCli < Formula
   desc "The official Mercado Pago CLI for developers and AI agents."
   homepage "https://github.com/mercadopago/mp-cli"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.0/mp_1.0.0_darwin_amd64.tar.gz"
-      sha256 "19ea018e193602026656e34497ce7a2dc50dd2d94fc1c1877b40b823a90ee552"
+      url "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.1/mp_1.0.1_darwin_amd64.tar.gz"
+      sha256 "644e853c966932bc5f3e9e3151437a13252307983d1c6908b7f54cd0664f9686"
 
       define_method(:install) do
         begin
-          Formula["mp"].unlink if Formula["mp"].linked?
+          Formula["mpcli"].unlink if Formula["mpcli"].linked?
         rescue FormulaUnavailableError
         end
-        bin.install "mp"
+        bin.install "mpcli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.0/mp_1.0.0_darwin_arm64.tar.gz"
-      sha256 "1e9c74820c4ace1056dd6cdd29c15b3974b37b06f2b0745e9df2a7d54f23f955"
+      url "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.1/mp_1.0.1_darwin_arm64.tar.gz"
+      sha256 "325439651f245d002baee1286183b77559670ad08057540b534eefa36db459a9"
 
       define_method(:install) do
         begin
-          Formula["mp"].unlink if Formula["mp"].linked?
+          Formula["mpcli"].unlink if Formula["mpcli"].linked?
         rescue FormulaUnavailableError
         end
-        bin.install "mp"
+        bin.install "mpcli"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.0/mp_1.0.0_linux_amd64.tar.gz"
-      sha256 "ce1bf7fa9d21d5a9e41a95a0293307b97bc572023b5c774d5f9acaaaad4cbefa"
+      url "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.1/mp_1.0.1_linux_amd64.tar.gz"
+      sha256 "1d3a0f9db7d8b1dcbfdb7630b90bc9295f17ef50d0a940938b96a3a80cba0a0b"
       define_method(:install) do
         begin
-          Formula["mp"].unlink if Formula["mp"].linked?
+          Formula["mpcli"].unlink if Formula["mpcli"].linked?
         rescue FormulaUnavailableError
         end
-        bin.install "mp"
+        bin.install "mpcli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.0/mp_1.0.0_linux_arm64.tar.gz"
-      sha256 "b388b6fc70020d0e44bf76d3f1d7b767576d5149083d6a4c9e5c4a8fa7dc9e3f"
+      url "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.1/mp_1.0.1_linux_arm64.tar.gz"
+      sha256 "34798d926779c4d96d3e4825baa8c1ebc40a293cd2e57461f0e8b1c1b4027274"
       define_method(:install) do
         begin
-          Formula["mp"].unlink if Formula["mp"].linked?
+          Formula["mpcli"].unlink if Formula["mpcli"].linked?
         rescue FormulaUnavailableError
         end
-        bin.install "mp"
+        bin.install "mpcli"
       end
     end
   end
 
   test do
-    system "#{bin}/mp", "--version"
+    system "#{bin}/mpcli", "--version"
   end
 end
