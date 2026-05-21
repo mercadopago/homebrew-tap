@@ -1,0 +1,5 @@
+Archive: stable
+Component: main
+Origin: Mercado Pago
+Label: Mercado Pago CLI
+Architecture: amd64 arm64
