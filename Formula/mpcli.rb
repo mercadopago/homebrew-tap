@@ -11,24 +11,24 @@ class Mpcli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.2/mp_1.0.2_darwin_amd64.tar.gz"
-      sha256 "0a7b5d7cd9f6e9fbe933cce3a0e6d7d69fc614f806473f4d94e7f380f690eb7e"
+      sha256 "03e47a05b5fb695f852236ecc53fb9c3ce8857544450208bee47fe0bce5bd3ac"
 
       define_method(:install) do
         begin
           Formula["mp-cli"].unlink if Formula["mp-cli"].linked?
-        rescue FormulaUnavailableError, UntrustedTapError
+        rescue FormulaUnavailableError, Homebrew::UntrustedTapError
         end
         bin.install "mpcli"
       end
     end
     if Hardware::CPU.arm?
       url "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.2/mp_1.0.2_darwin_arm64.tar.gz"
-      sha256 "18adb25fc82de4283da2ba47eba58739007fcefbeaa53d7e44e83a5731b01c9b"
+      sha256 "9765e0ba2e36852ae43d702ff114c171779c884ee7bd8adcb1d4f918cf1a8fa9"
 
       define_method(:install) do
         begin
           Formula["mp-cli"].unlink if Formula["mp-cli"].linked?
-        rescue FormulaUnavailableError, UntrustedTapError
+        rescue FormulaUnavailableError, Homebrew::UntrustedTapError
         end
         bin.install "mpcli"
       end
@@ -38,22 +38,22 @@ class Mpcli < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.2/mp_1.0.2_linux_amd64.tar.gz"
-      sha256 "ef893b9c6b39bd43f0ede69697da989b1c10d950268c517210cfeaf53bbff775"
+      sha256 "c9097b42c7be3c0874c44806d0df293e4ee6df08033ad043e6c3528d38001624"
       define_method(:install) do
         begin
           Formula["mp-cli"].unlink if Formula["mp-cli"].linked?
-        rescue FormulaUnavailableError, UntrustedTapError
+        rescue FormulaUnavailableError, Homebrew::UntrustedTapError
         end
         bin.install "mpcli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.2/mp_1.0.2_linux_arm64.tar.gz"
-      sha256 "bc7a09036373f3992b969933946816a8407a59f7cee87962781c8f2d81069a53"
+      sha256 "e06399c34af88a5f7caa586844e3c516cb11a927aecc92828f8488018dba5759"
       define_method(:install) do
         begin
           Formula["mp-cli"].unlink if Formula["mp-cli"].linked?
-        rescue FormulaUnavailableError, UntrustedTapError
+        rescue FormulaUnavailableError, Homebrew::UntrustedTapError
         end
         bin.install "mpcli"
       end
