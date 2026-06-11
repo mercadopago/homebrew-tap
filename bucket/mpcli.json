@@ -6,7 +6,7 @@
             "bin": [
                 "mpcli.exe"
             ],
-            "hash": "0cdc760e6235dc1a76e1cdefcf63d8e35fc8db0400172f4e0f6514ea9ab87729"
+            "hash": "4edf30b102b37498de90aed294e7f530fdd5615bd23f351cb4170bcd96ec8fc6"
         }
     },
     "homepage": "https://github.com/mercadopago/mp-cli",
