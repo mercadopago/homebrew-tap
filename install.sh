@@ -60,7 +60,7 @@ fi
 ASSET="mp_${VERSION#v}_${OS}_${ARCH}.tar.gz"
 DOWNLOAD_URL="https://github.com/${REPO}/releases/download/${VERSION}/${ASSET}"
 
-echo "Installing mp ${VERSION} (${OS}/${ARCH})..."
+echo "Installing mpcli ${VERSION} (${OS}/${ARCH})..."
 
 # ── Download & install ────────────────────────────────────────────────────────
 TMP=$(mktemp -d)
@@ -76,6 +76,6 @@ sudo mv "$TMP/$BINARY" "$INSTALL_DIR/$BINARY"
 sudo chmod +x "$INSTALL_DIR/$BINARY"
 
 echo ""
-echo "mp ${VERSION} installed to ${INSTALL_DIR}/${BINARY}"
+echo "mpcli ${VERSION} installed to ${INSTALL_DIR}/${BINARY}"
 echo ""
-mp --version
+mpcli --version
