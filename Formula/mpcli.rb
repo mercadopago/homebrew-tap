@@ -11,7 +11,7 @@ class Mpcli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.4/mp_1.0.4_darwin_amd64.tar.gz"
-      sha256 "d9ce9da62eeef5d5d8cdc1f2ffda59d0b42ad8395b6cd17edb63e757450ba473"
+      sha256 "7a894675c973ed6f8cfc4f93b7d408991abfb372707bfc158cc654b686f51ee7"
 
       define_method(:install) do
         bin.install "mpcli"
@@ -19,7 +19,7 @@ class Mpcli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.4/mp_1.0.4_darwin_arm64.tar.gz"
-      sha256 "2b930c12b00ef19a117d1e2910e318548edc25a6046418adc67abad4850e3e1a"
+      sha256 "b5d18d3cd166beb6d96026589efd35683f0d86e3ab3843a020469fbe2344d2d5"
 
       define_method(:install) do
         bin.install "mpcli"
@@ -30,14 +30,14 @@ class Mpcli < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.4/mp_1.0.4_linux_amd64.tar.gz"
-      sha256 "c424b38b9466b4f3ce80418c51f02030fac5f789b427545204dea0248abd282d"
+      sha256 "5b0b96d727abae13d10a42d5f02b5df693d8a301a854244594673cdce995be45"
       define_method(:install) do
         bin.install "mpcli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.4/mp_1.0.4_linux_arm64.tar.gz"
-      sha256 "fd419e17bf7aefa82fefacda285e6a721773de037e0e3b11d0b3b505ecd9a970"
+      sha256 "a13089c2ebf830d40d0a237a9ad965e08ed7f711587a2a0418fa285f980a9af9"
       define_method(:install) do
         bin.install "mpcli"
       end
