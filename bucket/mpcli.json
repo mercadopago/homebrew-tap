@@ -1,12 +1,12 @@
 {
-    "version": "1.0.4",
+    "version": "1.0.5",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.4/mp_1.0.4_windows_amd64.zip",
+            "url": "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.5/mp_1.0.5_windows_amd64.zip",
             "bin": [
                 "mpcli.exe"
             ],
-            "hash": "c3e60b28b24a6e404710ad9f1d995d31646a25391d4dd801d3fcb1d10655efda"
+            "hash": "4fee34095e1df98b66bd9e8652bcb34033994cf5aa26a5530b297022674081c8"
         }
     },
     "homepage": "https://github.com/mercadopago/mp-cli",
