@@ -5,21 +5,21 @@
 class Mpcli < Formula
   desc "The official Mercado Pago CLI for developers and AI agents."
   homepage "https://github.com/mercadopago/mp-cli"
-  version "1.0.4"
+  version "1.0.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.4/mp_1.0.4_darwin_amd64.tar.gz"
-      sha256 "7a894675c973ed6f8cfc4f93b7d408991abfb372707bfc158cc654b686f51ee7"
+      url "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.5/mp_1.0.5_darwin_amd64.tar.gz"
+      sha256 "6906b300fb44e3c4070b72b9c9b959deb9856709b64d5defa7c5a4b260179df2"
 
       define_method(:install) do
         bin.install "mpcli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.4/mp_1.0.4_darwin_arm64.tar.gz"
-      sha256 "b5d18d3cd166beb6d96026589efd35683f0d86e3ab3843a020469fbe2344d2d5"
+      url "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.5/mp_1.0.5_darwin_arm64.tar.gz"
+      sha256 "0dd99ba237d0ce920b3b68d6e62db6077a2ccae1ffb5049f617d2581e8b601a9"
 
       define_method(:install) do
         bin.install "mpcli"
@@ -29,15 +29,15 @@ class Mpcli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.4/mp_1.0.4_linux_amd64.tar.gz"
-      sha256 "5b0b96d727abae13d10a42d5f02b5df693d8a301a854244594673cdce995be45"
+      url "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.5/mp_1.0.5_linux_amd64.tar.gz"
+      sha256 "a83afd10a06d39437e80622cf388bb502f18bc276931ff493c48fa56e9850de9"
       define_method(:install) do
         bin.install "mpcli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.4/mp_1.0.4_linux_arm64.tar.gz"
-      sha256 "a13089c2ebf830d40d0a237a9ad965e08ed7f711587a2a0418fa285f980a9af9"
+      url "https://github.com/mercadopago/homebrew-tap/releases/download/v1.0.5/mp_1.0.5_linux_arm64.tar.gz"
+      sha256 "d43e915c73976d53ba08b163b6b0b6bc2c4519cbe713ef6aae7962f827538c2a"
       define_method(:install) do
         bin.install "mpcli"
       end
